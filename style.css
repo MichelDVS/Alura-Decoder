@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100..900&display=swap');
+:root {
+	--cor-texto-botoes-rodape: #06D001;
+	--cor-texto-mensagem-titulo: #b0b3b5;
+	--fonte-texto-botoes-rodape-titulo: 'montserrat', sans-serif;
+	--fonte-texto-mensagem: 'krona one', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+}
+
+
+
+.cabecalho {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2% 0% 0%;	
+	gap: 15%;
+}
+
+.logo__link__alura {
+	border-radius: 50%;		
+	padding: 10px 0%;
+	width: 2%;
+	height: 2%;
+}
+
+.titulo {	
+	font-size: 4rem;
+	font-family: var(--fonte-texto-botoes-rodape-titulo);
+	color: var(--cor-texto-mensagem-titulo);	
+}
+
+main {
+	display: flex;
+	align-items: center;
+	margin-top: 7%;	
+	padding: 1%;
+	gap: 0.5%;	
+}
+
+.setor-principal {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	gap: 4rem;	
+}
+
+.entrada-texto {
+	background-color: transparent;
+	border: solid #344955;
+	border-radius: 24px;
+	font-size: 18px;
+	font-family: var(--fonte-texto-mensagem);
+	font-weight: 400;
+	color: var(--cor-texto-mensagem-titulo);
+	width: 40rem;
+	height: 23rem;		
+	text-transform: lowercase;	
+}
+
+.informacao {
+	color: var(--cor-texto-mensagem-titulo);
+	font-size:small;
+}
+
+h6 {
+	border: 30%;
+	font-size: 20px;
+}
+
+.botoes {
+	display: flex;
+	margin-top: 20px;	
+}
+
+.btn-encriptografar {
+	background-color: #222831;
+	border: 1px solid #344955;
+	border-radius: 24px;
+	color: var(--cor-texto-botoes-rodape);
+	cursor: pointer;
+	height: 47px;
+	width: 250px;
+	font-size: 20px;
+	font-family: var(--fonte-texto-botoes-rodape);
+}
+
+.btn-desencriptografar {
+	background-color: #344955;
+	border: 1px solid #222831;
+	border-radius: 24px;
+	color: var(--cor-texto-botoes-rodape);
+	cursor: pointer;
+	height: 47px;
+	width: 250px;
+	font-size: 20px;
+	margin-left: 30px;
+	font-family: var(--fonte-texto-botoes-rodape);
+}
+
+.setor-secundario {
+	display: flex;
+	align-items: center;	
+	justify-content: center;	
+	width: 50%;	
+	gap: 11rem;		
+}
+
+.texto-copiar {
+	background-color: transparent;
+	border: solid #344955;
+	border-radius: 24px;	
+	width: 30rem;
+	height: 37rem;	
+}
+
+.resultado-saida {			
+	background-color: transparent;
+	outline: none;	
+	border: none;
+	width: 30rem;
+	height: 34rem;
+	font-size: 30px;
+	font-family: var(--fonte-texto-botoes-rodape);
+	color: var(--cor-texto-mensagem-titulo);
+
+}
+
+.btn-copiar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 30%;
+	background-color: #404258;
+	border: 1px solid #344955;
+	border-radius: 24px;		
+	font-family: var(--fonte-texto-botoes-rodape);
+	color: var(--cor-texto-botoes-rodape);
+	font-size: 20px;
+	height: 47px;
+	width: 200px;		
+	cursor:pointer;											
+}
+
+::placeholder {color: var(--cor-texto-mensagem-titulo)}
+	.entrada-texto {
+		font-family: var(--fonte-texto-mensagem);
+		font-size: 18px;    	
+		padding-left: 1rem;	
+	}
+
+	.resultado-saida {
+		font-family: var(--fonte-texto-mensagem);
+		font-size: 18px;
+		font-weight: 300;    	
+		padding-left: 1rem;		
+	}
+
+.btn-encriptografar:hover {
+	background-color: #27374D;
+	border: 2px solid var(--cor-texto-botoes-rodape);
+	padding: 1%;		
+}
+
+.btn-desencriptografar:hover {
+	background-color: #27374D;
+	border: 2px solid var(--cor-texto-botoes-rodape);
+	padding: 1%;		
+}
+
+.btn-copiar:hover {
+	background-color: #27374D;
+	border: 2px solid var(--cor-texto-botoes-rodape);
+	padding: 1%;			
+}
+
+.rodape {
+	display: flex;	
+	align-items: center;
+	flex-direction: column;
+	gap: 5%;
+	background-color: #394867;
+	font-family: var(--fonte-texto-botoes-rodape);
+	color: var(--cor-texto-botoes-rodape);
+	font-weight: 400;
+	font-size: 2rem;	
+	margin-top: 10rem;
+	padding: 1.5%;	
+}
+
+.bg__video {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	bottom: 0%;
+	width: 100%;
+	height: 133%;
+	z-index: -1;	
+	object-fit: cover;
+	
+}
+
+@media (max-width: 1400px) {
+	.logo__link__alura {
+		padding: 1rem;
+		margin-left: -7rem;		
+	}
+
+	.titulo {
+		font-size: 50px;
+		text-align: center;
+	}
+	.entrada-texto {
+		width: 30rem;
+		height: 15rem;		
+	}
+
+	.texto-copiar {
+		width: 20rem;
+		height: 30rem;
+	}
+
+	.resultado-saida {			
+		width: 20rem;
+		height: 23rem;						
+	}
+
+	.btn-copiar {
+		margin-top: 4rem;
+		margin-left: 20%;
+	}
+
+	.rodape {		
+		font-size: 1.5rem;
+		margin-top: 21rem;		
+	}
+}
+
+@media (max-width: 900px) {
+	.cabecalho {
+        flex-direction: column;
+		width: 100%;		
+    }
+
+	.logo__link__alura {
+		padding: 1rem;
+		margin-left: -7rem;
+	}
+
+	.titulo {
+		font-size: 40px;
+		text-align: center;
+	}
+
+	main {
+		flex-direction: column;
+		margin-top: 2rem;		
+		padding: 30px;
+		gap: 10px;
+	}
+	
+	.setor-principal {
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		gap: 2rem;
+	}
+	
+	.entrada-texto {
+		width: 29rem;
+		height: 15rem;		
+	}
+	
+	.informacao {
+		font-size:small;
+	}
+
+	h6 {
+		border: 30%;
+		font-size: 20px;
+	}
+	
+	.botoes {
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;		
+		gap: 2rem;	
+	}
+	
+	.btn-encriptografar {
+		height: 47px;
+		width: 250px;
+	}
+	
+	.btn-desencriptografar {
+		margin-left: 0%;
+		height: 47px;
+		width: 250px;		
+	}
+	
+	.setor-secundario {		
+		justify-content: center;
+		margin-top: 3rem;
+		width: 100%;
+		gap: 2rem;		
+	}
+	
+	.resultado-saida {			
+		width: 19rem;
+		height: 26rem;						
+	}
+	
+	.btn-copiar {			
+		margin-top: 1rem;
+	}
+	
+	.rodape {
+		padding: 1.5%;
+		margin-top: 6rem;						
+		font-weight: 400;
+		font-size: 1.5rem;
+	}
+		
+	.bg__video {
+		position: absolute;		
+		height: 170%;
+		z-index: -1;	
+		object-fit: cover;		
+	}
+}
+
+@media (max-width: 500px) {
+	.entrada-texto {
+		width: 20rem;
+		height: 15rem;		
+	}
+
+	.texto-copiar {
+		width: 19rem;
+		height: 27rem;
+	}
+
+	.resultado-saida {			
+		width: 19rem;
+		height: 23rem;						
+	}
+
+	.rodape {		
+		font-size: 1.2rem;
+		margin-top: 5rem;		
+	}
+
+	.bg__video {
+		position: absolute;		
+		height: 170%;
+		z-index: -1;	
+		object-fit: cover;		
+	}
+}
+
+@media (max-width: 400px) {
+	.logo__link__alura {
+		padding: 1rem;
+		margin-left: -8rem;
+	}
+
+	.titulo {
+		font-size: 35px;
+		text-align: center;
+	}
+
+	.entrada-texto {
+		width: 18rem;
+		height: 15rem;		
+	}
+
+	.texto-copiar {
+		width: 15rem;
+		height: 25rem;
+	}
+
+	.resultado-saida {			
+		width: 15rem;
+		height: 21rem;						
+	}
+
+	.btn-copiar {
+		margin-left: 9%;
+	}
+
+	.rodape {		
+		font-size: 0.9rem;
+		margin-top: 2rem;		
+	}
+
+	.rodape-texto {
+		padding: 1.5%;
+	}
+
+	.bg__video {
+		position: absolute;		
+		height: 160%;
+		z-index: -1;	
+		object-fit: cover;		
+	}
+}

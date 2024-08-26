@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="./img/Alura Claro sem fundo.png" type="image/x-icon">
+        <title>Text Decoder Alura</title>                
+    </head>
+    <body>
+        <header class= "cabecalho">
+            <a class ="logo__link__alura" href="https://alura.com.br" target="_blank" rel="noopener noreferrer">
+                <img src="./img/alura claro sem fundo.png" alt="Logo da Alura" >
+            </a>                    
+            <h1 class= "titulo">Decodificador de Texto</h1>            
+       </header>
+        <main>
+            <section class= "setor-principal"> 
+                <textarea class="entrada-texto" id="input-text" placeholder="Digite o seu texto aqui..."></textarea>
+
+                <div class= "informacao">
+                    <h6>
+                        🛈 Apenas letras minúsculas e sem acento.
+                    </h6>
+                </div>
+
+                <div class= "botoes">
+                    <button class= "btn-encriptografar" onclick="encriptografar()">Encriptografar</button>    
+                    <button class= "btn-desencriptografar" onclick="desencriptografar()">Desencriptografar</button>
+                </div>                
+                
+            </section>
+            <section class= "setor-secundario">
+                <div class = "texto-copiar">
+                    <textarea class="resultado-saida" name="saida" id="output-text"
+                        placeholder="nenhuma mensagem encontrada"></textarea>
+                    
+                    <button class="btn-copiar" onclick="copiar()">Copiar</button>
+                </div>
+                
+            </section>
+        </main>
+        <footer class= "rodape">
+            <div class="redes-sociais">
+                <a href="https://wa.me/5511968927878" target="_blank" rel="noopener noreferrer">
+                    <img src="./img/whatsapp.png" alt="Imagem logo do whatsapp">
+                </a>
+                <a href="https://instagram.com/micheldouglas.77" target="_blank" rel="noopener noreferrer">
+                    <img src="./img/instagram.png" alt="Imagem logo do Instagram">
+                </a>
+                <a href="https://github.com/MichelDVS" target="_blank" rel="noopener noreferrer">
+                    <img src="./img/github.png" alt="Imagem logo do GitHub">
+                </a>
+                <a href="https://linkedin.com/in/micheldouglas77" target="_blank" rel="noopener noreferrer">
+                    <img src="./img/linkedin.png" alt="Imagem logo do Linkedin">
+                </a>
+            </div>
+            <div class="rodape-texto">
+                <p>Desenvolvido por Michel Douglas.</p>
+            </div>
+                        
+        </footer> 
+        <video class="bg__video" autoplay loop>
+            <source src="./video/matrix cabeça.mp4" type="video/mp4">                
+        </video>  
+                
+        <script src="script.js" defer></script>
+    </body>
+</html>
